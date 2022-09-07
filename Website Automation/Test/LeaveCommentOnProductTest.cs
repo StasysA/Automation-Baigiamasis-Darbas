@@ -46,13 +46,13 @@ namespace Website_Automation.Test
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
 
             IWebElement resultPrivalomasVardas = driver.FindElement(By.CssSelector("#comment_textarea_holder > div:nth-child(2) > em"));
-            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasVardas.Text, "Answer is wrong");
+            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasVardas.Text, "Wrong");
 
             IWebElement resultPrivalomasEmail = driver.FindElement(By.CssSelector("#comment_textarea_holder > div:nth-child(3) > em"));
-            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasEmail.Text, "Answer is wrong");
+            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasEmail.Text, "Wrong");
 
             IWebElement resultPrivalomasTekstas = driver.FindElement(By.CssSelector("#comment_textarea_holder > div:nth-child(4) > em"));
-            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasTekstas.Text, "Answer is wrong");
+            Assert.AreEqual("Laukelis privalomas.", resultPrivalomasTekstas.Text, "Wrong");
 
             IWebElement inputName = driver.FindElement(By.Name("name"));
             inputName.SendKeys(name);

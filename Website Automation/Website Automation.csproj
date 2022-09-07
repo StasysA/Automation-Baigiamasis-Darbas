@@ -64,7 +64,9 @@
     <Compile Include="Test\BaseTest.cs" />
     <Compile Include="Test\BrandSearchVerification.cs" />
     <Compile Include="Test\LeaveCommentOnProductTest.cs" />
+    <Compile Include="Test\NoItemsFoundVerificationTest.cs" />
     <Compile Include="Test\ProductCartTest.cs" />
+    <Compile Include="Test\RegistrationTestPasswordNotMatch.cs" />
     <Compile Include="Tools\MyScreenshot.cs" />
   </ItemGroup>
   <ItemGroup>

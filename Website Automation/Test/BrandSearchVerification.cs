@@ -15,7 +15,7 @@ namespace draft.Test
         [TestCase("Dell", "Dell", TestName = "Dell")]
         [TestCase("Toshiba", "Toshiba", TestName = "Toshiba")]
 
-
+        //Klaida su Nell palikta sugeneruot screenui.
 
 
         public static void TestBrand(string searchValue, string result)
