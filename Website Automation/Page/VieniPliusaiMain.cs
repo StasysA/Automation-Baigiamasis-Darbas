@@ -14,7 +14,7 @@ namespace draft.Page
 
         private IWebElement _searchBar => Driver.FindElement(By.Id("main-search-input"));
         private IWebElement _searchSubmit => Driver.FindElement(By.Id("main-search-submit"));
-        private IWebElement _searchResult => Driver.FindElement(By.ClassName("fwb"));
+        private IWebElement _searchResult => Driver.FindElement(By.CssSelector("#middle_blocks > li > h2 > span:nth-child(1)"));
 
         public VieniPliusaiMain(IWebDriver webdriver) : base(webdriver) { }
 
@@ -49,7 +49,7 @@ namespace draft.Page
 
         public VieniPliusaiMain VerifyResult(string result)
         {
-            Assert.AreEqual(result, _searchResult, "ERROR");
+            Assert.AreEqual(result, _searchResult.Text, "ERROR");
 
             return this;
         }

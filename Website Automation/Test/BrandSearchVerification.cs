@@ -8,10 +8,13 @@ using System.Threading.Tasks;
 
 namespace draft.Test
 {
-    class FirstPliusas : BaseTest
+    class BrandSearchVerification : BaseTest
     {
-        [TestCase("Acer", TestName = "Acer")]
-        [TestCase("Dell", TestName = "Dell")]
+        [TestCase("Acer", "Acer", TestName = "Acer")]
+        [TestCase("Nell", "Dell", TestName = "Nell")]
+        [TestCase("Dell", "Dell", TestName = "Dell")]
+        [TestCase("Toshiba", "Toshiba", TestName = "Toshiba")]
+
 
 
 
